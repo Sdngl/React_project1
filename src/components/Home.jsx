@@ -1,9 +1,14 @@
 import React from 'react'
-
+import{useNavigate} from 'react-router-dom'
 export default function Home() {
+  const navigate = useNavigate();
   return (
-    <div>
-      This is a home component
-    </div>
+    <>
+    <input type="text" placeholder='Enter name'/>
+    <input type="number" placeholder='Enter age'/>
+    <button onClick ={() => navigate('/about')}>
+      Submit</button>
+    </>
+    
   )
 }

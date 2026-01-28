@@ -1,9 +1,12 @@
 import React from 'react'
-
-export default function About() {
+export default function About(props) {
+   const { name, age,setName,setAge } = props;
+  
   return (
-    <div>
-      Thi is a about component.
-    </div>
+    
+   <>
+   
+   Name:{name} <br></br> Age:{age}
+   </>
   )
 }
