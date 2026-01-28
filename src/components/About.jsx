@@ -1,6 +1,7 @@
 import React from 'react'
 export default function About(props) {
-   const { name, age,setName,setAge } = props;
+const { name, age } = props;
+
   
   return (
     
